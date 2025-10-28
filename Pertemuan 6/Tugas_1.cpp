@@ -1,0 +1,35 @@
+g /*--------------------------------------*/
+/*Program dengan pernyataan goto*/
+/*--------------------------------------*/
+
+#include <iostream>
+usinnamespace std;
+
+int main()
+{
+	int a, b;
+	char lagi;
+	
+	atas:
+		cout << "\nMasukkan Bilangan = ";
+		cin >> a;
+		
+		b = a%2;
+		
+		printf ("Nilai %d %%2 adalah = %d", a, b);
+		cout << "\nIngin Hitung Lagi [Y/T] : ";
+		cin >> lagi;
+		
+		if (lagi == 'Y' || lagi == 'y'){
+			goto atas;
+		}
+		
+		if (lagi == 'T' || lagi == 't'){
+			goto bawah;
+		}
+		
+	bawah:
+		
+	getchar();
+}
+
